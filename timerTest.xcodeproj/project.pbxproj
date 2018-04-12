@@ -16,6 +16,7 @@
 		A906CE1E207F401700E0BFC7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A906CE1D207F401700E0BFC7 /* FirstViewController.m */; };
 		A906CE21207F445F00E0BFC7 /* TimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A906CE20207F445F00E0BFC7 /* TimerProxy.m */; };
 		A906CE24207F462C00E0BFC7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A906CE23207F462C00E0BFC7 /* SecondViewController.m */; };
+		A906CE2F207F576200E0BFC7 /* NSTimer+XBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A906CE2E207F576200E0BFC7 /* NSTimer+XBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		A906CE20207F445F00E0BFC7 /* TimerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerProxy.m; sourceTree = "<group>"; };
 		A906CE22207F462C00E0BFC7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		A906CE23207F462C00E0BFC7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A906CE2D207F576200E0BFC7 /* NSTimer+XBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+XBlock.h"; sourceTree = "<group>"; };
+		A906CE2E207F576200E0BFC7 /* NSTimer+XBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+XBlock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 			children = (
 				A906CE06207F3FFD00E0BFC7 /* AppDelegate.h */,
 				A906CE07207F3FFD00E0BFC7 /* AppDelegate.m */,
+				A906CE2D207F576200E0BFC7 /* NSTimer+XBlock.h */,
+				A906CE2E207F576200E0BFC7 /* NSTimer+XBlock.m */,
 				A906CE09207F3FFD00E0BFC7 /* ViewController.h */,
 				A906CE0A207F3FFD00E0BFC7 /* ViewController.m */,
 				A906CE1C207F401700E0BFC7 /* FirstViewController.h */,
@@ -161,6 +166,7 @@
 				A906CE21207F445F00E0BFC7 /* TimerProxy.m in Sources */,
 				A906CE0B207F3FFD00E0BFC7 /* ViewController.m in Sources */,
 				A906CE16207F3FFD00E0BFC7 /* main.m in Sources */,
+				A906CE2F207F576200E0BFC7 /* NSTimer+XBlock.m in Sources */,
 				A906CE08207F3FFD00E0BFC7 /* AppDelegate.m in Sources */,
 				A906CE1E207F401700E0BFC7 /* FirstViewController.m in Sources */,
 			);

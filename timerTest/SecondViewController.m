@@ -8,8 +8,11 @@
 
 #import "SecondViewController.h"
 #import "TimerProxy.h"
+#import "NSTimer+XBlock.h"
 @interface SecondViewController ()
-@property(nonatomic, strong)TimerProxy *tiemr;
+@property(nonatomic, strong)TimerProxy *timerProxy;
+@property(nonatomic, weak)NSTimer *timer;
+
 @end
 
 @implementation SecondViewController
@@ -23,11 +26,15 @@
     [btn addTarget:self action:@selector(clickPop) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
-    self.tiemr = [[TimerProxy alloc] init];
-    [self.tiemr timerWithTimeInterval:1 selector:^{
+    self.timerProxy = [[TimerProxy alloc] init];
+    [self.timerProxy timerWithTimeInterval:1 selector:^{
         NSLog(@"timer repeat");
     } repeats:YES];
     
+    
+//    self.timer = [NSTimer xxxxscheduledTimerWithTimeInterval:1 repeats:true block:^{
+//        NSLog(@"sssssssss");
+//    }];
 }
 
 -(void)clickPop {
@@ -39,11 +46,13 @@
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-    [self.tiemr invalidate];
+//    [self.tiemr invalidate];
 }
 
 -(void)dealloc {
     NSLog(@"%@", NSStringFromSelector(_cmd));
+    [self.timerProxy invalidate];
+//    [self.timer invalidate];
 }
 
 - (void)didReceiveMemoryWarning {

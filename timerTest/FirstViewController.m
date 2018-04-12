@@ -29,8 +29,8 @@
     
      /* 如果不把timer2添加到RunLoop中是无法正常工作的(注意如果想要在滚动UIScrollView时timer2可以正常工作可以将NSDefaultRunLoopMode改为NSRunLoopCommonModes)
       
-      NSTimer以timerWithTimeInterval创建以后并没有赋值给self.timer,因为timer是weak属性，赋值后会立即释放。直到timer被添加到Runloop后才会赋值给self.timer.
-      为了确保定时器正常运转，在timer被添加到runloop后，会执行一次retain。
+      NSTimer以timerWithTimeInterval创建以后并没有赋值给self.timer,因为timer是weak属性，赋值后会立即释放。直到timer被添加到Runloop后才会赋值给self.timer；
+      为了确保定时器正常运转，在timer被添加到runloop后，会执行一次retain；
       
       */
 //    self.timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(timerFire) userInfo:nil repeats:YES];
@@ -46,6 +46,10 @@
     
     /*
      timer的执行总是在固定的时间，如果错过了，就会跳过，继续执行下面的固定时间，比如10:01,10:02,10:03,10:04.可能跳过10:02直接执行10:03
+     */
+    
+    /* !!!!!!!!!!!!! 如果我们知道timer什么时候不用了，我们主动调用invalidate方法，可以避免引用循环的。
+                     比如一个计次的timer，当到了指定的次数，自动调用其失效，或者手动失效。如果按照对象自已的生命周期，来取消，好象行不通。
      */
 }
 
