@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "FirstViewController.h"
+#import "SecondViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,8 +18,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
 }
 
+- (IBAction)clickNext:(id)sender {
+    
+    FirstViewController *vc = [[FirstViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:^{
+        
+    }];
+    
+}
+- (IBAction)clickNext2:(id)sender {
+    SecondViewController *vc = [[SecondViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:^{
+        
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

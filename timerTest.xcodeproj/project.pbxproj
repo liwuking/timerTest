@@ -13,6 +13,9 @@
 		A906CE10207F3FFD00E0BFC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A906CE0F207F3FFD00E0BFC7 /* Assets.xcassets */; };
 		A906CE13207F3FFD00E0BFC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A906CE11207F3FFD00E0BFC7 /* LaunchScreen.storyboard */; };
 		A906CE16207F3FFD00E0BFC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A906CE15207F3FFD00E0BFC7 /* main.m */; };
+		A906CE1E207F401700E0BFC7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A906CE1D207F401700E0BFC7 /* FirstViewController.m */; };
+		A906CE21207F445F00E0BFC7 /* TimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A906CE20207F445F00E0BFC7 /* TimerProxy.m */; };
+		A906CE24207F462C00E0BFC7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A906CE23207F462C00E0BFC7 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		A906CE12207F3FFD00E0BFC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A906CE14207F3FFD00E0BFC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A906CE15207F3FFD00E0BFC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A906CE1C207F401700E0BFC7 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		A906CE1D207F401700E0BFC7 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		A906CE1F207F445F00E0BFC7 /* TimerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerProxy.h; sourceTree = "<group>"; };
+		A906CE20207F445F00E0BFC7 /* TimerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerProxy.m; sourceTree = "<group>"; };
+		A906CE22207F462C00E0BFC7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A906CE23207F462C00E0BFC7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 				A906CE07207F3FFD00E0BFC7 /* AppDelegate.m */,
 				A906CE09207F3FFD00E0BFC7 /* ViewController.h */,
 				A906CE0A207F3FFD00E0BFC7 /* ViewController.m */,
+				A906CE1C207F401700E0BFC7 /* FirstViewController.h */,
+				A906CE1D207F401700E0BFC7 /* FirstViewController.m */,
+				A906CE22207F462C00E0BFC7 /* SecondViewController.h */,
+				A906CE23207F462C00E0BFC7 /* SecondViewController.m */,
+				A906CE1F207F445F00E0BFC7 /* TimerProxy.h */,
+				A906CE20207F445F00E0BFC7 /* TimerProxy.m */,
 				A906CE0C207F3FFD00E0BFC7 /* Main.storyboard */,
 				A906CE0F207F3FFD00E0BFC7 /* Assets.xcassets */,
 				A906CE11207F3FFD00E0BFC7 /* LaunchScreen.storyboard */,
@@ -142,9 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A906CE24207F462C00E0BFC7 /* SecondViewController.m in Sources */,
+				A906CE21207F445F00E0BFC7 /* TimerProxy.m in Sources */,
 				A906CE0B207F3FFD00E0BFC7 /* ViewController.m in Sources */,
 				A906CE16207F3FFD00E0BFC7 /* main.m in Sources */,
 				A906CE08207F3FFD00E0BFC7 /* AppDelegate.m in Sources */,
+				A906CE1E207F401700E0BFC7 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
